@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CALCULATOR</title>
+    <script type="text/javascript" src = "Finals-Lab1.js">
+    </script>
+    <style>
+        body {
+            justify-content: center;
+            background-color: powderblue;
+        }
+        input, button {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+        input {
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .square-border {
+            width: 700px; 
+            height: 700px;
+            border: 2px solid black;
+            background-color: white; 
+            text-align: center;
+            margin-left: 30%;
+            border-radius: 20%;
+            margin-top: 100px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            width:200px;
+            margin-left: 32%;
+        }
+    </style>
+</head>
+<body>
+        <div class="square-border">
+            <h1>Calculator</h1>
+            <hr style="border: 1.5px solid black; width: 50%;">
+            <br>
+            <h3>Enter First Number</h3>
+            <input type="text" id="num1" placeholder="ENTER A NUMBER"><br>
+            <br>
+            <h3>Enter Second Number</h3>
+            <input type="text" id="num2" placeholder="ENTER A NUMBER"><br>
+            <br>
+            <div>
+                <button onclick="calculateSum();">ADDITION</button>
+                <button onclick="calculateDifference();">SUBTRACTION</button>
+                <button onclick="calculateProduct();">MULTIPLICATION</button>
+                <button onclick="calculateQuotient();">DIVISION</button>
+            </div>
+            <br>
+            <h3>Result: </h3>
+            <div style="font-weight: bold;" id="result"></div>
+        </div>
+
+</body>
+</html>

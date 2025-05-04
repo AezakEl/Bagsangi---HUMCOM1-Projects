@@ -1,0 +1,64 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(Background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.head, .profile {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.head h1:hover {
+    animation: colorful 2s infinite;
+}
+
+@keyframes colorful {
+    66% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+    33% {
+        color: yellow;
+    }
+}
+
+.head ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.head a:hover {
+    font-weight: bold;
+}
+
+.head hr, .subDiv hr {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.head ul li {
+    margin-right: 40px;
+}
+
+.mainDiv {
+    display: flex;
+}
+
+.subDiv {
+    padding-left: 10px;
+    flex: 1;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}

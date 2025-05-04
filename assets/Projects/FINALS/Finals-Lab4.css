@@ -1,0 +1,8 @@
+#result1 , #result2 {
+    font-weight: bold;
+}
+.box {
+    border: 1.5px solid black;
+    padding: 8px;
+    width: 240px;
+}

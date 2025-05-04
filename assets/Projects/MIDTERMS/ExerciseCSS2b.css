@@ -1,0 +1,17 @@
+body {
+    color: white;    
+}
+
+#topRow {
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+#subject {
+    text-align: left;
+}
