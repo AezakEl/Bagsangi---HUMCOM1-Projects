@@ -26,65 +26,64 @@
    <body class="d-flex flex-column h-100 dark-toggle-background">
       <main class="flex-shrink-0">
          <!-- Navigation-->
-         <nav
-            class="navbar navbar-expand-lg navbar-light py-3 sticky-top dark-toggle transition"
-            >
-            <div class="container px-5">
-               <a class="navbar-brand" href="index.html"
-                  ><span class="fw-bolder text-primary text-gradient"
-                  >FRESHIE BAGSANGI</span
-                  ></a
-                  >
-               <button
-                  class="navbar-toggler btn btn-gradient"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                  >
-               <span class="navbar-toggler-icon"></span>Menu
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                     <li class="nav-item">
-                        <a
-                           class="nav-link dark-toggle-text transition"
-                           href="index.html"
-                           >Home</a
-                           >
-                     </li>
-                     <li class="nav-item">
-                        <a
-                           class="nav-link dark-toggle-text transition"
-                           href="aboutMe.html"
-                           >About Me</a
-                           >
-                     </li>
-                     <li class="nav-item">
-                        <a
-                           class="nav-link dark-toggle-text transition"
-                           href="projects.html"
-                           >Projects</a
-                           >
-                     </li>
-                  </ul>
-                  <header class="dark-toggle">
-                     <button class="btn btn-gradient btn-sm" id="theme-toggle-btn">
-                     Toggle Dark Mode
-                     </button>
-                  </header>
-                  <button
-                     onclick="topFunction()"
-                     id="backToTop"
-                     class="btn btn-gradient btn-sm"
-                     >
-                  Back to Top
-                  </button>
-               </div>
-            </div>
-         </nav>
+         <nav class="sticky-top">
+  <!-- Main Navbar -->
+  <div class="navbar navbar-expand-lg navbar-light py-3 dark-toggle transition">
+    <div class="container px-5">
+      <a class="navbar-brand" href="index.html">
+        <span class="fw-bolder text-primary text-gradient">FRESHIE BAGSANGI</span>
+      </a>
+      <button
+        class="navbar-toggler btn btn-gradient"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">Menu</span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Main Nav Links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link dark-toggle-text transition" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-toggle-text transition" href="aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-toggle-text transition" href="projects.html">Projects</a>
+          </li>
+        </ul>
+
+        <!-- Jump To (Mobile only) -->
+        <ul class="navbar-nav d-lg-none mb-2 small fw-bolder" id="JumpToMobile">
+          <li class="nav-item nav-link dark-toggle-text">Jump to:</li>
+          <li class="nav-item">
+            <a class="btn btn-gradient dark-toggle-button btn-sm me-1 mb-1" href="#PRELIMS">Prelims</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-gradient btn-sm me-1 mb-1" href="#MIDTERMS">Midterms</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-gradient btn-sm me-1 mb-1" href="#FINALS">Finals</a>
+          </li>
+        </ul>
+
+        <!-- Theme Toggle + Back to Top -->
+        <div class="d-flex align-items-center ms-lg-3">
+          <button class="btn btn-gradient btn-sm me-2" id="theme-toggle-btn">Toggle Dark Mode</button>
+          <button onclick="topFunction()" id="backToTop" class="btn btn-gradient btn-sm">Back to Top</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="py-2 dark-toggle"></div>
+</nav>
          <!-- Header-->
          <header
             class="py-5 bg-gradient-primary-to-secondary"

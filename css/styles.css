@@ -6375,6 +6375,11 @@ fieldset:disabled .btn {
   padding-left: 3.5rem !important;
 }
 
+.px-7 {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
+}
+
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -10251,6 +10256,14 @@ section {
   color: #fff;
 }
 
+.nav-link.active,
+.btn.active {
+  color: #fff !important;
+  background: linear-gradient(135deg, #d3af5e 0%, #094f35 100%) !important;
+  border: 1px solid #000 !important; /* Use solid color since border can't take gradients */
+  box-shadow: 0 0 5px rgba(211, 175, 94, 0.6); /* optional glow effect */
+}
+
 nav {
   background-color: white;
 }
@@ -10258,3 +10271,30 @@ nav {
 .transition {
   transition: background-color 0.3s, color 0.3s;
 }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    position: relative;
+  }
+
+  .modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

@@ -133,3 +133,21 @@ window.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", newTheme);
   });
 });
+
+// Open PDF
+ function showPDF(pdfURL) {
+    const modal = document.getElementById("pdfModal");
+    const frame = document.getElementById("pdfFrame");
+    frame.src = pdfURL;
+    modal.style.display = "flex";
+  }
+
+  function closePDF(event) {
+    // Close if clicking outside the iframe (on modal background)
+    if (event.target.id === "pdfModal") {
+      const modal = document.getElementById("pdfModal");
+      const frame = document.getElementById("pdfFrame");
+      modal.style.display = "none";
+      frame.src = ""; // optional: clear src
+    }
+  }
